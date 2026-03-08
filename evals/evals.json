@@ -1,0 +1,23 @@
+{
+  "skill_name": "teachable-downloader",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "ผมอยากโหลด video จาก https://data-science-bootcamp1.teachable.com/courses/2836706/lectures/63206587",
+      "expected_output": "Claude ถามหา m3u8 URL และแนะนำวิธีเปิด DevTools Network tab เพื่อ capture URL",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "download this: https://contentplayer.hotmart.com/video/ABC123/hls/ABC123-audio=96000-video=1500000.m3u8?Policy=xxx&Signature=yyy&Key-Pair-Id=zzz",
+      "expected_output": "Claude รัน yt-dlp ทันทีเพราะมี m3u8 URL แล้ว และโหลด video ไปที่ ~/Downloads/",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "โหลดเสร็จยังครับ?",
+      "expected_output": "Claude เช็ค background task progress และรายงาน % เสร็จ, fragment, speed, ETA",
+      "files": []
+    }
+  ]
+}
